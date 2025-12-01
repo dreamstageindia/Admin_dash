@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'dashboard',
-                element: <Dashboard/> // Placeholder for dashboard
+                element: <AdminDashboard/> // Placeholder for dashboard
             },
             {
                 path:'create-auth',
