@@ -9,7 +9,7 @@ const LandingPage = () => {
     // Redirect to /dashboard if logged in
     useEffect(() => {
         if (isLoggedIn) {
-            navigate('/dashboard');
+            navigate('/manage-users');
         }
     }, [isLoggedIn, navigate]);
 
