@@ -6,7 +6,7 @@ import axios from './axiosInstance'; // Import your configured axios instance
 // Option 1: Create a shared axios instance (recommended)
 // Create axios instance with default config
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080/api",
+    baseURL: "https://admin.dreamstage.tech/api/api",
     headers: {
         'Content-Type': 'application/json',
     },
