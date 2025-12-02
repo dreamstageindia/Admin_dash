@@ -63,9 +63,9 @@ router.delete("/epks/:id", authenticateToken, isVerified, deleteEPK);
 router.put("/epks/:id/publish", authenticateToken, isVerified, togglePublish);
 
 // Bulk operations (admin only)
-router.post("/epks/bulk-update", authenticateToken, isVerified, isAdmin, bulkUpdateEPKs);
-router.post("/epks/bulk-delete", authenticateToken, isVerified, isAdmin, bulkDeleteEPKs);
-router.post("/epks/bulk-import", authenticateToken, isVerified, isAdmin, bulkImportEPKs);
+router.post("/epks/bulk-update", authenticateToken, bulkUpdateEPKs);
+router.post("/epks/bulk-delete", authenticateToken,  bulkDeleteEPKs);
+router.post("/epks/bulk-import", authenticateToken,  bulkImportEPKs);
 
 // Optional: Add a protected test route
 router.get("/protected-test", authenticateToken, (req, res) => {
