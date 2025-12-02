@@ -6,7 +6,7 @@ import axios from './axiosInstance'; // Import your configured axios instance
 // Option 1: Create a shared axios instance (recommended)
 // Create axios instance with default config
 const axiosInstance = axios.create({
-    baseURL: process.env.REACT_APP_BACKEND_URL || "http://localhost:8080/api",
+    baseURL: process.env.REACT_APP_BACKEND_URL,
     headers: {
         'Content-Type': 'application/json',
     },

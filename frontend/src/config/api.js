@@ -1,5 +1,5 @@
 // frontend/src/config/api.js
-const API_BASE_URL = process.env.REACT_APP_ADMIN_API_URL || "http://localhost:8080/api";
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 export const API_ENDPOINTS = {
     USERS: {
